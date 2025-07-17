@@ -5,13 +5,22 @@ class ArticleModel {
   final String url;
   // final Source? source;
 
-  const ArticleModel({
+  ArticleModel({
     // this.source,
     required this.image,
     required this.title,
     required this.subTitle,
     required this.url,
   });
+
+  factory ArticleModel.fromJson(json) {
+    return ArticleModel(
+      image: json['urlToImage'],
+      title: json['title'],
+      subTitle: json['description'],
+      url: json['url'],
+    );
+  }
 }
 
 // class Source {
