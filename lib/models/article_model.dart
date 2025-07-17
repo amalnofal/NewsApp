@@ -19,6 +19,10 @@ class ArticleModel {
       title: json['title'],
       subTitle: json['description'],
       url: json['url'],
+      // source: Source(
+      //   id: article['source']['id'],
+      //   name: article['source']['name'],
+      // ),
     );
   }
 }
