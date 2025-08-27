@@ -12,7 +12,7 @@ class NewsListBuilder extends StatefulWidget {
 }
 
 class _NewsListBuilderState extends State<NewsListBuilder> {
-  var future;
+  late Future<List<ArticleModel>> future;
   @override
   void initState() {
     super.initState();

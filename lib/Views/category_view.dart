@@ -8,8 +8,11 @@ class CategoryView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(category, style: TextStyle(fontWeight: FontWeight.bold)),
-        backgroundColor: Colors.grey,
+        title: Text(
+          category,
+          style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white),
+        ),
+        backgroundColor: Colors.orangeAccent,
       ),
       body: Padding(
         padding: const EdgeInsets.all(20.0),
